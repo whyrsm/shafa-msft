@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blueprint Visual – 10 Muwashofat untuk Gen‑Z (Light v2)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#f7fafc; --card:#ffffff; --muted:#475569; --accent:#0ea5e9; --accent2:#22c55e; }
+    body{background: radial-gradient(1200px 800px at 80% -10%, rgba(14,165,233,.12), transparent),
+                     radial-gradient(900px 600px at -10% 20%, rgba(34,197,94,.10), transparent), var(--bg);}    
+    .glass{backdrop-filter: blur(6px); background: rgba(255,255,255,.88)}
+    .tag{border:1px solid rgba(15,23,42,.08)}
+    .pill{border:1px solid rgba(15,23,42,.08)}
+    .i{font-style: italic}
+    .twist{background: linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+    .accordion-content{max-height:0; overflow:hidden; transition:max-height .35s ease}
+    .accordion.open .accordion-content{max-height:2600px}
+    .card{border:1px solid rgba(15,23,42,.08); transition:transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform: translateY(-2px); box-shadow: 0 8px 24px rgba(2,6,23,.08)}
+    .section-title{font-size:.8rem; letter-spacing:.12em; color:#0ea5e9}
+    .subsec-title{font-size:.78rem; letter-spacing:.08em; color:#16a34a}
+  </style>
+</head>
+<body class="text-slate-800">
+  <!-- Header -->
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4">
+    <div class="flex flex-col lg:flex-row lg:items-end gap-4">
+      <div class="flex-1">
+        <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Blueprint Visual <span class="twist">10 Muwashofat</span> untuk Gen‑Z</h1>
+        <p class="mt-2 text-slate-600 max-w-2xl">Alur <span class="text-sky-600 font-medium">Muwashofat → Kompetensi → Indikator → Metode</span> dengan highlight <span class="i">enrichment</span> dari dokumen kedua pada kolom Makna, Kompetensi, Tantangan, serta daftar <span class="font-medium">Katalog Topik & Praktik</span>.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <input id="search" class="w-72 max-w-full bg-white border border-slate-200 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400" placeholder="Cari muwashofat, kompetensi, tantangan…" />
+        <button id="toggleAll" class="pill rounded-xl px-3 py-2 text-xs text-slate-700 hover:text-slate-900">Expand/Collapse</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legend -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2">
+    <div class="text-xs text-slate-600 flex flex-wrap items-center gap-3">
+      <span class="pill rounded-full px-2 py-1">Makna & Perilaku</span>
+      <span class="pill rounded-full px-2 py-1">Kompetensi</span>
+      <span class="pill rounded-full px-2 py-1">Tantangan</span>
+      <span class="pill rounded-full px-2 py-1">Katalog Topik</span>
+      <span class="pill rounded-full px-2 py-1">Praktik</span>
+      <span class="pill rounded-full px-2 py-1">Indikator (Outcome Modul)</span>
+      <span class="i ml-2">Teks miring = enrichment (dokumen kedua)</span>
+    </div>
+  </section>
+
+  <!-- Grid Cards -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div id="grid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+      <!-- 1. Salimul Aqidah -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="aqidah worldview etika moral global hoaks literasi media purpose">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">1) Salimul Aqidah</h2>
+            <p class="text-xs text-slate-500">Worldview & Purpose</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Worldview lurus, kokoh.</li>
+              <li class="i">Memahami kerangka etika global & prinsip moral; menganalisis dilema etis dan isu global dengan filter Islami.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🧠 Critical thinking</span>
+              <span class="tag rounded-full px-2 py-1">📰 Literasi media</span>
+              <span class="tag rounded-full px-2 py-1">🎯 Purpose</span>
+              <span class="tag rounded-full px-2 py-1 i">⚖️ Penalaran etis</span>
+              <span class="tag rounded-full px-2 py-1 i">🌍 Kesadaran budaya</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Misinformasi, relativisme nilai.</li>
+              <li class="i">Paparan isu global & benturan nilai lintas budaya; normalisasi perilaku tidak Islami di ruang digital.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Aqidah & Worldview untuk Pemuda Profesional</li>
+              <li>Critical Thinking & Literasi Media</li>
+              <li>Purpose & Ikigai</li>
+              <li>Dialog Perbedaan</li>
+              <li class="i">Memahami Kerangka Etika</li>
+              <li class="i">Menganalisis Dilema Moral</li>
+              <li class="i">Menerapkan Prinsip Etika dalam Situasi Nyata</li>
+              <li class="i">Kesadaran Isu‑isu Global</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Bedah kasus berita viral</li>
+              <li>Pernyataan nilai pribadi (value statement)</li>
+              <li>Jurnal refleksi</li>
+              <li class="i">Simulasi studi kasus dilema etis</li>
+              <li class="i">Diskusi lintas budaya terarah</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Peta worldview pribadi tervalidasi mentor</li>
+              <li>Skor rubrik penalaran etis meningkat</li>
+              <li>Esai analitis isu global berbasis nilai Islami</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 2. Shohihul Ibadah -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="ibadah fokus mindful disiplin stres keseimbangan">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">2) Shohihul Ibadah</h2>
+            <p class="text-xs text-slate-500">Kebiasaan Ibadah & Fokus</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Ibadah benar & konsisten.</li>
+              <li class="i">Integrasi mindfulness Islami, manajemen stres, dan keseimbangan hidup untuk menjaga kualitas ibadah.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🎯 Fokus</span>
+              <span class="tag rounded-full px-2 py-1">🧘 Mindfulness</span>
+              <span class="tag rounded-full px-2 py-1">📅 Disiplin</span>
+              <span class="tag rounded-full px-2 py-1 i">🕊️ Perawatan spiritual diri</span>
+              <span class="tag rounded-full px-2 py-1 i">🌡️ Manajemen stres</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Distraksi digital, inkonsisten.</li>
+              <li class="i">Burnout, ritme hidup tidak teratur, kurang terintegrasinya ritual dengan aktivitas harian.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Fiqh Ibadah Praktis & Konsistensi</li>
+              <li>Mindfulness & Khusyuk</li>
+              <li>Ritme Harian Produktif</li>
+              <li class="i">Mindfulness dan Perawatan Diri</li>
+              <li class="i">Strategi Reduksi Stres</li>
+              <li class="i">Keseimbangan Kerja‑Belajar‑Ibadah</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Focus sprint & habit tracker</li>
+              <li>Digital minimalism challenge</li>
+              <li class="i">Latihan pernapasan & mindfulness singkat</li>
+              <li class="i">Rencana harian keseimbangan aktivitas</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Konsistensi ibadah ≥ 90% (3 bulan)</li>
+              <li>Peningkatan skor fokus/deep‑work</li>
+              <li>Penurunan self‑reported stres</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 3. Matinul Khuluq -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="akhlak etika empati keberagaman inklusif kolaborasi">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">3) Matinul Khuluq</h2>
+            <p class="text-xs text-slate-500">Etika & Profesionalisme</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Akhlak kuat.</li>
+              <li class="i">Adab lintas budaya, inklusivitas, dan profesionalisme di semua medium komunikasi.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">⚖️ Etika</span>
+              <span class="tag rounded-full px-2 py-1">💼 Profesionalisme</span>
+              <span class="tag rounded-full px-2 py-1">🤝 Empati</span>
+              <span class="tag rounded-full px-2 py-1 i">🗺️ Kompetensi budaya</span>
+              <span class="tag rounded-full px-2 py-1 i">🌈 Kepemimpinan inklusif</span>
+              <span class="tag rounded-full px-2 py-1 i">🧩 Resolusi konflik</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Etika digital, kesantunan daring.</li>
+              <li class="i">Intoleransi di ruang digital & budaya debat destruktif.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Etika Digital & Adab Kolaborasi</li>
+              <li>Empati, Komunikasi Tanpa Drama, & Psychological Safety</li>
+              <li>Integrity in Action</li>
+              <li class="i">Kompetensi Budaya & Keberagaman</li>
+              <li class="i">Mempromosikan Inklusivitas & Rasa Hormat</li>
+              <li class="i">Mengembangkan Empati & Kesadaran Sosial</li>
+              <li class="i">Pengambilan Keputusan Berbasis Etika</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Role‑play konflik & umpan balik SBI</li>
+              <li>Code of conduct tim</li>
+              <li class="i">Simulasi dialog lintas budaya</li>
+              <li class="i">Studi kasus dilema etika digital</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kenaikan skor 360° empati & integritas</li>
+              <li>Penurunan insiden komunikasi destruktif</li>
+              <li>Kepatuhan anti‑plagiarisme & attribution</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 4. Qowiyul Jismi -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="fisik sehat energi tidur nutrisi gerak ketahanan">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">4) Qowiyul Jismi</h2>
+            <p class="text-xs text-slate-500">Kesehatan Menyeluruh</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Fisik sehat.</li>
+              <li class="i">Gaya hidup aktif, nutrisi seimbang, tidur teratur, dan ketahanan fisik‑mental.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🔋 Manajemen energi</span>
+              <span class="tag rounded-full px-2 py-1">🛡️ Ketahanan stres</span>
+              <span class="tag rounded-full px-2 py-1 i">🏃 Daya tahan fisik</span>
+              <span class="tag rounded-full px-2 py-1 i">🥗 Perencanaan nutrisi</span>
+              <span class="tag rounded-full px-2 py-1 i">😴 Pemulihan & tidur</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Utang tidur, gaya hidup sedentari.</li>
+              <li class="i">Body image keliru, duduk terlalu lama, literasi gizi rendah.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Sleep–Nutrition–Movement Basics</li>
+              <li>Stress Resilience & Emotional Regulation</li>
+              <li>Digital Wellbeing</li>
+              <li class="i">Rutinitas Olahraga Teratur</li>
+              <li class="i">Nutrisi & Pola Makan Sehat</li>
+              <li class="i">Tidur & Praktik Pemulihan</li>
+              <li class="i">Teknik Manajemen Stres & Coping</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Pengukuran sleep score & rencana deload</li>
+              <li>Movement snack harian</li>
+              <li class="i">Jurnal energi (makanan‑aktivitas‑kualitas tidur)</li>
+              <li class="i">Checklist ergonomi & jeda micro‑movement</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Sleep score ≥ 80; aktivitas ≥ 150 menit/minggu</li>
+              <li>Frekuensi keluhan kelelahan menurun</li>
+              <li>Kepatuhan rencana nutrisi & gerak</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 5. Mutsaqqoful Fikri -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="ilmu belajar ai data konferensi komunitas kreativitas">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">5) Mutsaqqoful Fikri</h2>
+            <p class="text-xs text-slate-500">Belajar Sepanjang Hayat</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Ilmu luas.</li>
+              <li class="i">Kebiasaan belajar sepanjang hayat; partisipasi forum ilmiah; literasi data & AI untuk solusi inovatif.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🧩 Cara belajar</span>
+              <span class="tag rounded-full px-2 py-1">🤖 Literasi AI/Data</span>
+              <span class="tag rounded-full px-2 py-1 i">🔁 Belajar berkelanjutan</span>
+              <span class="tag rounded-full px-2 py-1 i">💡 Kreativitas & ideasi</span>
+              <span class="tag rounded-full px-2 py-1 i">🕸️ Jejaring profesional</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kelebihan informasi, belajar permukaan.</li>
+              <li class="i">Belajar instan tanpa komunitas keilmuan; filter info lemah.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>How to Learn: spaced repetition, retrieval, interleaving</li>
+              <li>AI Literacy: prompt & etika AI</li>
+              <li>Data & Information Literacy</li>
+              <li class="i">Menghadiri Konferensi & Lokakarya</li>
+              <li class="i">Bergabung dengan Asosiasi Profesional</li>
+              <li class="i">Kreativitas & Generasi Ide</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kartu Anki & kuis retrieval</li>
+              <li>Catatan terstruktur berbantuan AI</li>
+              <li>Mini‑analisis data</li>
+              <li class="i">Ringkasan konferensi & rencana aksi</li>
+              <li class="i">Pemetaan jejaring komunitas keilmuan</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Ringkasan kritis ≥ 3 sumber/minggu</li>
+              <li>Partisipasi aktif komunitas/fora ilmiah</li>
+              <li>Portofolio catatan & proyek belajar</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 6. Mujahadatun Linafsihi -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="disiplin diri grit emosi refleksi tujuan smart">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">6) Mujahadatun Linafsihi</h2>
+            <p class="text-xs text-slate-500">Disiplin Diri</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kendali diri.</li>
+              <li class="i">Kesadaran diri tinggi, regulasi emosi, refleksi rutin, dan tujuan hidup terukur.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🧭 Self‑regulation</span>
+              <span class="tag rounded-full px-2 py-1">🪜 Kebiasaan</span>
+              <span class="tag rounded-full px-2 py-1">🔥 Grit</span>
+              <span class="tag rounded-full px-2 py-1 i">🧠 Kecerdasan emosional</span>
+              <span class="tag rounded-full px-2 py-1 i">🎯 Penetapan tujuan</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Prokrastinasi, instan‑gratification.</li>
+              <li class="i">Sulit memprioritaskan; toleransi gagal rendah; lingkungan penuh distraksi.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Self‑Regulation & Grit</li>
+              <li>Atomic Habits Praktis</li>
+              <li>Mengelola Prokrastinasi</li>
+              <li class="i">Kesadaran Diri & Kecerdasan Emosional</li>
+              <li class="i">SMART Goals & Rencana Aksi</li>
+              <li class="i">Praktik Refleksi</li>
+              <li class="i">Mindfulness & Manajemen Stres</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Habit contract & peer accountability</li>
+              <li>Timeboxing & 2‑minute rule</li>
+              <li class="i">Jurnal emosi harian</li>
+              <li class="i">Rencana relapse‑prevention personal</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Penyelesaian tugas tepat waktu ≥ 90%</li>
+              <li>Skor resiliensi/ketekunan meningkat</li>
+              <li>Frekuensi penundaan menurun</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 7. Munazhom fi Syu’unihi -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="tertib urusan pkm kanban design thinking prioritas batasan hobi">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">7) Munazhom fi Syu’unihi</h2>
+            <p class="text-xs text-slate-500">Manajemen Pribadi</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Tertib urusan.</li>
+              <li class="i">Menjaga batas waktu & prioritas; gunakan pendekatan inovatif untuk manajemen pribadi.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🧠 Berpikir sistem</span>
+              <span class="tag rounded-full px-2 py-1">📦 Manajemen proyek</span>
+              <span class="tag rounded-full px-2 py-1">🗂️ PKM</span>
+              <span class="tag rounded-full px-2 py-1 i">⏱️ Batasan waktu</span>
+              <span class="tag rounded-full px-2 py-1 i">📝 Perencanaan bisnis</span>
+              <span class="tag rounded-full px-2 py-1 i">🧪 Design thinking</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Berantakan file/tugas.</li>
+              <li class="i">Kurang dokumentasi; multitasking tanpa sistem; minim skill manajemen proyek personal.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Personal Knowledge Management (PKM)</li>
+              <li>Project Management Dasar</li>
+              <li>Dokumentasi & SOP Pribadi</li>
+              <li class="i">Menetapkan Batasan & Memprioritaskan Waktu</li>
+              <li class="i">Hobi & Rekreasi Sehat</li>
+              <li class="i">Perencanaan & Strategi Bisnis</li>
+              <li class="i">Design Thinking untuk Manajemen Pribadi</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Setup kanban & weekly review</li>
+              <li>Template SOP tugas berulang</li>
+              <li class="i">Audit waktu & penetapan boundary</li>
+              <li class="i">Sprint perbaikan sistem pribadi (design thinking)</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Papan kerja aktif; tugas berulang terdokumentasi</li>
+              <li>Waktu hilang karena friksi sistem menurun</li>
+              <li>Kepatuhan weekly review ≥ 80%</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 8. Haritsun ‘ala Waqtihi -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="waktu prioritas timeboxing fokus fomo jejaring produktivitas">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">8) Haritsun ‘ala Waqtihi</h2>
+            <p class="text-xs text-slate-500">Manajemen Waktu & Perhatian</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Menjaga waktu.</li>
+              <li class="i">Menyusun prioritas strategis, menjaga keseimbangan hidup, dan memanfaatkan waktu untuk pengembangan diri & jejaring.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🏷️ Prioritization</span>
+              <span class="tag rounded-full px-2 py-1">⌛ Timeboxing</span>
+              <span class="tag rounded-full px-2 py-1">🎯 Attention mgmt</span>
+              <span class="tag rounded-full px-2 py-1 i">🗂️ Kerangka prioritas waktu</span>
+              <span class="tag rounded-full px-2 py-1 i">⚖️ Keseimbangan hidup</span>
+              <span class="tag rounded-full px-2 py-1 i">🔗 Jejaring</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Context switching, FOMO.</li>
+              <li class="i">Menunda hal penting karena distraksi; sulit menolak ajakan kurang produktif.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Prioritization & OKR Personal</li>
+              <li>Calendar & Attention Management</li>
+              <li>Meeting Hygiene</li>
+              <li class="i">Kerangka Prioritisasi Waktu</li>
+              <li class="i">Praktik Keseimbangan Hidup</li>
+              <li class="i">Jejaring & Pengembangan Profesional</li>
+              <li class="i">Menghindari Pemboros Waktu</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Desain kalender satu minggu</li>
+              <li>Ritual fokus harian</li>
+              <li class="i">Audit waktu & eliminasi distraksi</li>
+              <li class="i">Sesi jejaring terjadwal</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Eksekusi time‑blocked ≥ 80%/minggu</li>
+              <li>Rasio waktu fokus vs reaktif membaik</li>
+              <li>Penurunan interupsi non‑esensial</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 9. Qodirun ‘alal Kasbi -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="karier finansial usaha investasi budgeting pitching jaringan">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">9) Qodirun ‘alal Kasbi</h2>
+            <p class="text-xs text-slate-500">Karier & Kemandirian Finansial</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Mandiri rezeki.</li>
+              <li class="i">Merencanakan keuangan, mengelola risiko, berinovasi dalam usaha, dan membangun jaringan profesional.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🧰 Kesiapan karier</span>
+              <span class="tag rounded-full px-2 py-1">🚀 Kewirausahaan</span>
+              <span class="tag rounded-full px-2 py-1">💰 Literasi finansial</span>
+              <span class="tag rounded-full px-2 py-1 i">📊 Penganggaran</span>
+              <span class="tag rounded-full px-2 py-1 i">📈 Prinsip investasi</span>
+              <span class="tag rounded-full px-2 py-1 i">🧪 Inovasi bisnis</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Arah karier, gaji/side hustle.</li>
+              <li class="i">Literasi keuangan minim; pola konsumtif; pengalaman praktis usaha terbatas.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kesiapan Karier (CV/Portofolio, LinkedIn, Wawancara)</li>
+              <li>Freelancing & Side Hustle</li>
+              <li>Entrepreneurship Sprint</li>
+              <li>Literasi Finansial (arus kas, dana darurat, investasi dasar)</li>
+              <li class="i">Penganggaran & Perencanaan Keuangan</li>
+              <li class="i">Prinsip Investasi Dasar & Diversifikasi</li>
+              <li class="i">Kewirausahaan & Inovasi</li>
+              <li class="i">Jejaring & Pitching Ide</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Portofolio 1‑pager & pitch deck 5 slide</li>
+              <li>Cashflow tracker bulanan</li>
+              <li class="i">Simulasi pitching & umpan balik investor</li>
+              <li class="i">Rencana investasi jangka panjang simulatif</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Portofolio & CV terkurasi</li>
+              <li>Arus kas positif & kepatuhan anggaran</li>
+              <li>Rencana usaha/praktik kewirausahaan tervalidasi</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+      <!-- 10. Nafi’un Lighoirihi -->
+      <article class="card accordion rounded-2xl glass p-5" data-keywords="dampak sosial volunteering nonprofit design thinking dokumentasi kolaborasi">
+        <header class="flex items-start justify-between gap-3 cursor-pointer accordion-toggle">
+          <div>
+            <h2 class="text-lg font-semibold">10) Nafi’un Lighoirihi</h2>
+            <p class="text-xs text-slate-500">Kepemimpinan & Dampak</p>
+          </div>
+          <span class="text-slate-500 text-sm">▼</span>
+        </header>
+        <div class="accordion-content mt-4 space-y-5">
+          <section>
+            <div class="section-title">Makna & Perilaku Kunci</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Bermanfaat bagi orang lain.</li>
+              <li class="i">Identifikasi kebutuhan masyarakat, kolaborasi lintas sektor, dan dampak sosial terukur.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Kompetensi Modern</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="tag rounded-full px-2 py-1">🧑‍🏫 Service leadership</span>
+              <span class="tag rounded-full px-2 py-1">🤝 Kolaborasi</span>
+              <span class="tag rounded-full px-2 py-1">📣 Pengaruh</span>
+              <span class="tag rounded-full px-2 py-1 i">🧭 Asesmen kebutuhan komunitas</span>
+              <span class="tag rounded-full px-2 py-1 i">🧠 Design thinking (dampak sosial)</span>
+            </div>
+          </section>
+          <section>
+            <div class="section-title">Tantangan Gen‑Z</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kolaborasi lintas generasi.</li>
+              <li class="i">Kurang memahami dinamika sosial; dokumentasi dampak lemah; keterlibatan lintas sektor terbatas.</li>
+            </ul>
+          </section>
+          <section>
+            <div class="section-title">Katalog Topik Pelatihan</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Kepemimpinan Melayani & Community Organizing</li>
+              <li>Design Thinking untuk Dampak Sosial</li>
+              <li>Public Speaking & Social Influence</li>
+              <li class="i">Kerelawanan & Pembelajaran Berbasis Layanan</li>
+              <li class="i">Mengidentifikasi Kebutuhan Komunitas (Design Thinking)</li>
+              <li class="i">Kolaborasi dengan Organisasi Non‑Profit</li>
+              <li class="i">Menampilkan Proyek & Dampak</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Praktik</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Proyek layanan 2–4 minggu</li>
+              <li>Kampanye komunitas mini</li>
+              <li class="i">Kolaborasi langsung dengan NGO lokal</li>
+              <li class="i">Dokumentasi portofolio dampak (studi kasus)</li>
+            </ul>
+          </section>
+          <section>
+            <div class="subsec-title">Indikator (Outcome Modul)</div>
+            <ul class="mt-1 list-disc list-inside text-sm space-y-1">
+              <li>Metrik dampak sosial (beneficiaries, engagement, keberlanjutan)</li>
+              <li>Testimoni & bukti kontribusi lintas sektor</li>
+              <li>Repositori publik karya & capaian</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <div class="text-xs text-slate-600">Tip: gunakan kotak pencarian untuk menemukan kompetensi/tantangan tertentu. Klik setiap kartu untuk membuka/menutup rinciannya.</div>
+  </footer>
+
+  <script>
+    // Accordion toggle behavior
+    document.querySelectorAll('.accordion').forEach(card => {
+      const header = card.querySelector('.accordion-toggle');
+      header.addEventListener('click', () => card.classList.toggle('open'));
+    });
+
+    // Expand/Collapse All
+    const toggleBtn = document.getElementById('toggleAll');
+    let expanded = false;
+    toggleBtn.addEventListener('click', () => {
+      expanded = !expanded;
+      document.querySelectorAll('.accordion').forEach(card => {
+        if (expanded) card.classList.add('open'); else card.classList.remove('open');
+      });
+    });
+
+    // Search filter
+    const input = document.getElementById('search');
+    input.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll('#grid .card').forEach(card => {
+        const text = (card.innerText + ' ' + card.getAttribute('data-keywords')).toLowerCase();
+        card.style.display = text.includes(q) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
